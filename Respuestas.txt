@@ -1,0 +1,34 @@
+Tres preguntas para cerrar
+
+Responde estas preguntas con tus propias palabras, después de haber ejecutado el código de los pasos
+anteriores — algunas piden que calcules algo extra para responderlas bien.
+
+
+1. Mediana vs. promedio, con datos reales
+Calcula la media y la mediana de Edad incluyendo a los clientes mayores de 85 años, y luego calcúlalas otra vez
+excluyéndolos. ¿Cuál de las dos medidas cambió más al quitar esos casos? ¿Por qué tiene sentido ese resultado?
+
+   Al calcular la mediia y la mediad de "Edad" antes y despues de excluir a los clientes mayores de 85 años
+   la media cambio ma que la mediana
+
+   Esto pasa porque la media utiliza todos los valores para ahcer el promedio, por lo que clientes
+   de edades muy altas influyen en el resultado
+
+2. Dos columnas, dos estrategias distintas
+Sucursal tiene apenas 3.17% de nulos y Email tiene 74.60%. ¿Por qué la estrategia correcta no es la misma para
+ambas, aunque las dos sean columnas de texto?
+
+    Sucursal tiene solo 3.17% de valores nulosm por lo que es razonable completar los registros con la moda (el valor que mas se repite). 
+
+    Mientras que Email tiene un 74.6% de valores nulos y no es posible inventar direcciones para rellenarlas
+    mucho menos rellenar con valores estadisticocs como la moda o la media
+
+3. Mirando hacia adelante
+Si este gimnasio quisiera más adelante predecir qué clientes están en riesgo de cancelar su membresía, ¿qué
+precaución tomarías con los datos que acabas de limpiar antes de usarlos para eso?
+
+    Me aseguraria de que los datos utilizados sean de buena calidad y representen correctamente la realidad
+
+    Tambien verificaria que el tratamiento de los valores nulos no introduzca sesgos
+    eliminaria columnas que no aporten informacion util como "Email", revisaria datos duplicados o inconsistentes
+    y dividiria los datos en conjuntos de entrenamiento y prueba antes de entrenar el modelo.
